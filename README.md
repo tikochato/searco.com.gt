@@ -25,8 +25,10 @@ PS: Not sure how to get that contact form working? Give formspree.io a try (it's
 
 Credits:
 
-	Demo Images:
+	Images:
 		Unsplash (unsplash.com)
+		bg.jpg Photo by riccardo oliva on Unsplash
+		bg-body.jpg Photo by Mudassir Ali on Unsplash
 
 	Icons:
 		Font Awesome (fontawesome.io)

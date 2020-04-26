@@ -84,12 +84,7 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		/* background-color: #1f1815;
-		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg/bg-body.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%; */
+		background-image: url("../../images/bg/bg-body.jpg");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -104,7 +99,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #e6dcdc;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -117,7 +112,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #eaaa6b;
 		text-decoration: none;
 	}
 
@@ -140,8 +135,18 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	.menu {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.menu-el {
+		border-bottom: none;
+		color: #eaaa6b;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #eaaa6b;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -1901,7 +1906,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #a2a2a2;
+			color: #e6dcdc;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2048,6 +2053,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		max-width: 80%;
 	}
 
 		.image:before {
@@ -2107,6 +2113,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 0.35em;
 			display: block;
+			max-width: 100%;
 		}
 
 		.image.left {
@@ -2130,7 +2137,6 @@ input, select, textarea {
 			}
 
 		.image.fit {
-			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
 		}
@@ -2237,7 +2243,7 @@ input, select, textarea {
 			}
 
 			ul.labeled-icons li h3 {
-				color: #b2b2b2;
+				color: #eaaa6b;
 				left: 0;
 				position: absolute;
 				text-align: center;
@@ -2248,10 +2254,6 @@ input, select, textarea {
 /* Actions */
 
 	ul.actions {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
@@ -2452,7 +2454,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+		color: #e6dcdc !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2599,16 +2601,16 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg/bg.jpg");
 		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
+		background-repeat: repeat,								repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em;
+		padding: 8em 4em 4em 4em;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
 		width: 35%;
 	}
@@ -2622,10 +2624,6 @@ input, select, textarea {
 		}
 
 		#header > .inner {
-			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
-			-ms-flex-grow: 1;
-			flex-grow: 1;
 			margin: 0 0 2em 0;
 		}
 
@@ -2646,7 +2644,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 15.25em;
 		}
 
 /* Footer */
@@ -2689,8 +2687,8 @@ input, select, textarea {
 
 	#main {
 		margin-left: 35%;
+		padding: 4em 4em 4em 4em;
 		max-width: 54em;
-		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
 
@@ -3084,7 +3082,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-image: url("images/overlay.png"), url("../../images/bg/bg.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;

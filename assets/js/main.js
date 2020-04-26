@@ -98,8 +98,36 @@
 		// Lightbox gallery.
 			$window.on('load', function() {
 
-				$('#two').poptrox({
-					caption: function($a) { return $a.next('h3').text(); },
+				$('#diseniogallery').poptrox({
+					caption: function($a) { return $a.next('p').text(); },
+					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: '.work-item a.image',
+					usePopupCaption: true,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: false,
+					usePopupNav: true,
+					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				});
+				
+				$('#construcciongallery').poptrox({
+					caption: function($a) { return $a.next('p').text(); },
+					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: '.work-item a.image',
+					usePopupCaption: true,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: false,
+					usePopupNav: true,
+					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				});
+				
+				$('#otrosgallery').poptrox({
+					caption: function($a) { return $a.next('p').text(); },
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
 					popupCloserText: '',
