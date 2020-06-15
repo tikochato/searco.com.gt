@@ -1811,6 +1811,10 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	.form {
+		color: black;
+	}
+
 	label {
 		color: #787878;
 		display: block;
