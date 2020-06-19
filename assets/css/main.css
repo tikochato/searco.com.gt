@@ -145,6 +145,11 @@ input, select, textarea {
 		color: #eaaa6b;
 	}
 
+	.menu-list {
+		background: rgba(30, 38, 46, 0.8);
+		padding-top: 0.5em;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #eaaa6b;
 		font-weight: 400;
@@ -2261,6 +2266,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
+		margin-top: 1em;
 		padding-left: 0;
 	}
 
@@ -2612,7 +2618,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em 4em 4em;
+		padding: 4em 6em 6em 8em;
 		position: fixed;
 		text-align: center;
 		top: 0;
@@ -3220,7 +3226,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4.5em 1.5em;
+				padding: 4.5em 2.5em;
 			}
 
 				#header h1 br {
