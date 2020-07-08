@@ -98,61 +98,10 @@
 	// Lightbox gallery.
 	$window.on('load', function () {
 
-		$('#diseniogallery').poptrox({
-			caption: function ($a) { return $a.next('p').text(); },
-			overlayColor: '#2c2c2c',
-			overlayOpacity: 0.85,
-			popupCloserText: '',
-			popupLoaderText: '',
-			selector: '.work-item a.image',
-			usePopupCaption: true,
-			usePopupDefaultStyling: false,
-			usePopupEasyClose: false,
-			usePopupNav: true,
-			windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-		});
-
-		$('#mantenimientogallery').poptrox({
-			caption: function ($a) { return $a.next('p').text(); },
-			overlayColor: '#2c2c2c',
-			overlayOpacity: 0.85,
-			popupCloserText: '',
-			popupLoaderText: '',
-			selector: '.work-item a.image',
-			usePopupCaption: true,
-			usePopupDefaultStyling: false,
-			usePopupEasyClose: false,
-			usePopupNav: true,
-			windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-		});
-
-		$('#construcciongallery').poptrox({
-			caption: function ($a) { return $a.next('p').text(); },
-			overlayColor: '#2c2c2c',
-			overlayOpacity: 0.85,
-			popupCloserText: '',
-			popupLoaderText: '',
-			selector: '.work-item a.image',
-			usePopupCaption: true,
-			usePopupDefaultStyling: false,
-			usePopupEasyClose: false,
-			usePopupNav: true,
-			windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-		});
-
-		$('#otrosgallery').poptrox({
-			caption: function ($a) { return $a.next('p').text(); },
-			overlayColor: '#2c2c2c',
-			overlayOpacity: 0.85,
-			popupCloserText: '',
-			popupLoaderText: '',
-			selector: '.work-item a.image',
-			usePopupCaption: true,
-			usePopupDefaultStyling: false,
-			usePopupEasyClose: false,
-			usePopupNav: true,
-			windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-		});
+		$('#diseniogallery a').simpleLightbox({ showCounter: false });
+		$('#mantenimientogallery a').simpleLightbox({ showCounter: false });
+		$('#construcciongallery a').simpleLightbox({ showCounter: false });
+		$('#otrosgallery a').simpleLightbox({ showCounter: false });
 
 	});
 
